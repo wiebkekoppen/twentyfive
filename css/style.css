@@ -1,4 +1,9 @@
 
+@media only screen and (min-width: 500px){
+    #indexwraper
+    
+}
+
 
 #outline{
     display:grid;
@@ -6,12 +11,13 @@
     grid-template-rows: 20vh 20vh auto 10vh;
     grid-gap: 20px;
     grid-template-areas: 
-    
+
     "hd hd"
     "se se"
     "mn mn"
     "ft ft";
 }
+
 
 header{
     display:flex;
@@ -20,15 +26,26 @@ header{
     grid-column-start: 1;
     grid-column-end: 2;
     justify-content: center;
-}
+    }
+
 
 .headertitel{
     width: fit-content;
     height: fit-content;
     margin-top: 0%;
     padding: 0%;
+    font-size: larger;
+    
+    .shadows-into-light-regular {
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
 
 }
+
+
+
 footer{
     grid-area: ft;
     background-color: deepskyblue;
@@ -44,5 +61,6 @@ main{
     flex-direction: column;
     justify-content: space-around;
     grid-area: mn;
-    background-color: hotpink;
+    background-color: transparent;
+    grid-gap: 20px;
 }

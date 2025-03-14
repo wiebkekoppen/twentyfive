@@ -4,7 +4,6 @@
     
 }
 
-
 #outline{
     display:grid;
     grid-template-rows: 50% 50%;
@@ -12,48 +11,94 @@
     grid-gap: 20px;
     grid-template-areas: 
 
-    "hd hd"
+    "nv hd"
     "se se"
     "mn mn"
     "ft ft";
 }
 
-
 header{
     display:flex;
     grid-area: hd;
-    background-color: blueviolet;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    background-color: transparent;
+    grid-column-start: 2;
+    grid-column-end: 4;
     justify-content: center;
-    }
-
+    align-items: center;
+}
 
 .headertitel{
     width: fit-content;
     height: fit-content;
     margin-top: 0%;
     padding: 0%;
-    font-size: larger;
-    
-    .shadows-into-light-regular {
-        font-family: "Shadows Into Light", cursive;
-        font-weight: 400;
-        font-style: normal;
-    }
-
+    font-size: 50px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background-color: lightgoldenrodyellow;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
 
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+nav{
+    grid-area: nv;
+    grid-column-start: 1;
+}
 
 footer{
     grid-area: ft;
-    background-color: deepskyblue;
+    background-color: transparent;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 section{
     grid-area: se;
-    background-color: peachpuff;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main{
@@ -64,3 +109,4 @@ main{
     background-color: transparent;
     grid-gap: 20px;
 }
+

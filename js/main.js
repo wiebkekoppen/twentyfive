@@ -1,4 +1,4 @@
-let layer = documeny.querySelector(".fade-layer")
+let layer = document.querySelector(".fade-layer")
 layer.addEventListener("click",showMenu)
 
 let button = document.querySelector(".menu-button")
@@ -12,3 +12,7 @@ function showMenu(){
     layer.classList.toggle("visible")
 
 }
+
+
+
+

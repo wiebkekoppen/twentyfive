@@ -48,6 +48,9 @@ header{
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .menu-button{
@@ -119,3 +122,55 @@ main{
     grid-gap: 20px;
 }
 
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Spring{ 
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.Summer{ 
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.Autumn{ 
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.Winter{ 
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+<div class="Summer"
+          <img src="img/summer1.jpg" alt="Summer" height="225">
+          <div class="centered">Summer</div>
+        </div>

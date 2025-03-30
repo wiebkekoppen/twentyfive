@@ -7,7 +7,7 @@
 #outline{
     display:grid;
     grid-template-rows: 50% 50%;
-    grid-template-rows: 5vh 20vh 20vh auto 10vh;
+    grid-template-rows: 5vh 20vh 20vh auto 15vh;
     grid-gap: 20px;
     grid-template-areas: 
 
@@ -22,7 +22,7 @@
 
     display:grid;
     grid-template-rows: 50% 50%;
-    grid-template-rows: 5vh 20vh 35vh 35vh 35vh 35vh 35vh 35vh 10vh;
+    grid-template-rows: 5vh 20vh 35vh 35vh 35vh 35vh 35vh 35vh 15vh;
     grid-gap: 20px;
     grid-template-areas: 
 
@@ -37,6 +37,10 @@
     "ft ft";
 }
 
+
+.background{
+    opacity: 0.5;
+}
 
 header{
     display:flex;
@@ -57,25 +61,26 @@ header{
     font-style: normal;
     justify-content: center;
     align-items: center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
-    ;
-
+    text-shadow: 5px 5px 10px rgb(251, 234, 116);
 }
 
 .menu{
     height: 100vh;
     width: 80vw;
-    background-color: rgb(255, 250, 160);
+    background-color: rgb(251, 234, 116);
     position: fixed;
     top: 0;
     left: -90vw;
     transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 21px -10px rgb(251, 234, 116);
     z-index: 10;
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
+    ul {list-style-type:none}
 }
+
 
 .menu-button{
     cursor: pointer;
@@ -276,6 +281,6 @@ main{
 }
 
 .image{
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5)
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
 }
 

@@ -326,7 +326,7 @@ main{
     #outline2{
         display:grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 5vh 20vh 35vh 35vh 15vh;
+        grid-template-rows: 5vh 20vh 45vh 45vh 15vh;
         grid-gap: 20px;
         grid-template-areas: 
         "nv nv"

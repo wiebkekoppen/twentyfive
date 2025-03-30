@@ -1,26 +1,15 @@
 
+
 @media only screen and (min-width: 375px){
-    
-    
+    main1, main12{
+        display: none;
+    }
 }
-
-
-@media screen and (min-width:1280px){
-    
-
-
-
-
-
-}
-
-
-
 
 
 #outline{
     display:grid;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 5vh 20vh 20vh auto 15vh;
     grid-gap: 20px;
     grid-template-areas: 
@@ -35,7 +24,7 @@
 #outline2{
 
     display:grid;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 5vh 20vh 35vh 35vh 35vh 35vh 35vh 35vh 15vh;
     grid-gap: 20px;
     grid-template-areas: 
@@ -79,13 +68,11 @@ header{
 }
 
 .subtitel{
-
     font-size: 1rem;
     margin-top: 0;
     text-shadow: 5px 5px 10px rgb(251, 234, 116);
     font-family: "Shadows Into Light", cursive;
 }
-
 
 .menu{
     height: 100vh;
@@ -116,7 +103,7 @@ ul {list-style-type:none}
 .menu-button span.material-symbols-outlined{
     font-size: 2.5rem;
     z-index: 1000; 
-  font-variation-settings:
+    font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
@@ -157,7 +144,6 @@ footer{
     justify-content: center;
     align-items: center;
     text-align:left;
-    padding: 30px;
     width: 100%;
 }
 
@@ -241,7 +227,7 @@ section26{
     text-align:justify;
 }
 
-main{
+main3{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -258,43 +244,7 @@ main{
     transform: translate(-50%, -50%);
 }
 
-.Spring{ 
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    border-radius: 8px;
-
-}
-
-.Summer{ 
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    border-radius: 8px;
-
-}
-
-.Autumn{ 
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    border-radius: 8px;
-
-}
-
-.Winter{ 
+.Seasons{ 
     position: relative;
     text-align: center;
     color: white;
@@ -304,17 +254,18 @@ main{
     font-size: 50px;
     border-radius: 8px;
 }
+
 
 .image{
-    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
     object-fit: cover;
     width: 300px;
     height: 300px;
     background-color: #fff;
-    padding: 10px 10px 10px;
+    padding: 7px 7px 7px;
 }
 
-.polaroid {
+    .polaroid {
     background-color: #fff;
     padding: 15px 15px 190px;
     display: inline-block;
@@ -322,7 +273,7 @@ main{
     text-align: center;
   }
 
-  figcaption {
+  .figcaption {
     color: #000;
     text-align: center;
   }
@@ -332,3 +283,44 @@ main{
     width: 150px;
     height: 150px;
   }
+
+
+@media only screen and (min-width: 1024px){
+    section21, section22, section23, section24, section25, section26, main3{
+        display: none;
+    }
+
+    #outline{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5vh 20vh 20vh auto auto 15vh;
+        grid-gap: 20px;
+        grid-template-areas: 
+    
+        "nv nv"
+        "hd hd"
+        "se1 se1"
+        "mn1 mn1"
+        "mn12 mn12"
+        "ft ft";
+    }
+    main1{
+        display: flex;
+        flex-direction: row;
+        justify-content:  space-evenly ;
+        grid-area: mn1;
+        background-color: transparent;
+        grid-gap: 20px;
+        
+    }
+
+    main12{
+        display: flex;
+        justify-content:  space-evenly ;
+        grid-area: mn12;
+        background-color: transparent;
+        grid-gap: 20px;
+        flex-direction: row;
+    }
+
+}

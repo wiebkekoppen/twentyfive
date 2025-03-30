@@ -7,15 +7,36 @@
 #outline{
     display:grid;
     grid-template-rows: 50% 50%;
-    grid-template-rows: 20vh 20vh auto 10vh;
+    grid-template-rows: 5vh 20vh 20vh auto 10vh;
     grid-gap: 20px;
     grid-template-areas: 
 
-    "nv hd"
-    "se se"
+    "nv nv"
+    "hd hd"
+    "se1 se1"
     "mn mn"
     "ft ft";
 }
+
+#outline2{
+
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-rows: 5vh 20vh 35vh 35vh 35vh 35vh 35vh 35vh 10vh;
+    grid-gap: 20px;
+    grid-template-areas: 
+
+    "nv nv"
+    "hd hd"
+    "se22 se22"
+    "se21 se21"
+    "se23 se23"
+    "se25 se25"
+    "se24 se24"
+    "se26 se26"
+    "ft ft";
+}
+
 
 header{
     display:flex;
@@ -36,12 +57,15 @@ header{
     font-style: normal;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+    ;
+
 }
 
 .menu{
     height: 100vh;
     width: 80vw;
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(255, 250, 160);
     position: fixed;
     top: 0;
     left: -90vw;
@@ -101,16 +125,86 @@ footer{
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
+    text-align:justify;
 }
 
 section{
-    grid-area: se;
+    grid-area: se1;
     background-color: transparent;
     display: flex;
     justify-content:center;
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
+    text-align:justify;
+}
+
+
+section21{
+    grid-area: se21;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+section22{
+    grid-area: se22;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+section23{
+    grid-area: se23;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+section24{
+    grid-area: se24;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+
+section25{
+    grid-area: se25;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+section26{
+    grid-area: se26;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
 }
 
 main{
@@ -138,6 +232,8 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
+    border-radius: 8px;
+
 }
 
 .Summer{ 
@@ -148,6 +244,8 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
+    border-radius: 8px;
+
 }
 
 .Autumn{ 
@@ -158,6 +256,8 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
+    border-radius: 8px;
+
 }
 
 .Winter{ 
@@ -168,9 +268,14 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
+    border-radius: 8px;
 }
 
-<div class="Summer"
-          <img src="img/summer1.jpg" alt="Summer" height="225">
-          <div class="centered">Summer</div>
-        </div>
+.textarea{
+    width: 439px;
+}
+
+.image{
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5)
+}
+

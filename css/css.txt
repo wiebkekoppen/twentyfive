@@ -125,11 +125,6 @@ CSS goes in this folder
 }
 
 
-
-
-
-
-
           <section221 class="row">      
             <div class="text">
               <p><b>About:</b></p>

@@ -1,7 +1,7 @@
 
 
 @media only screen and (min-width: 375px){
-    main1, main12, se222, se221, #outline23{
+    main1, main12, se222, se221, main2, main22{
         display: none;
     }
 }
@@ -294,7 +294,7 @@ main{
     #outline{
         display:grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 5vh 20vh 20vh auto auto 15vh;
+        grid-template-rows: 10vh 20vh 20vh auto auto 15vh;
         grid-gap: 20px;
         grid-template-areas: 
     
@@ -312,7 +312,6 @@ main{
         grid-area: mn1;
         background-color: transparent;
         grid-gap: 20px;
-        
     }
 
     main12{
@@ -324,8 +323,7 @@ main{
         flex-direction: row;
     }
 
-    #outline23{
-
+    #outline2{
         display:grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 5vh 20vh 35vh 35vh 15vh;
@@ -336,5 +334,27 @@ main{
         "mn2 mn2"
         "mn22 mn22"
         "ft ft";
+    }
+
+    main2{
+        grid-area: mn2;
+        background-color: transparent;
+        display: flex;
+        justify-content:center;
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align:justify;
+    }
+
+    main22{
+        grid-area: mn22;
+        background-color: transparent;
+        display: flex;
+        justify-content:center;
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align:justify;
     }
 }

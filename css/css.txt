@@ -2,14 +2,6 @@ CSS goes in this folder
 
 
 
-@media only screen and (min-width: 375px){
-    
-    section222, section221, main1, main12{
-        display: none;
-
-    }
-}
-
 @media only screen and (min-width:1024px){
 
 
@@ -173,30 +165,3 @@ CSS goes in this folder
           </section222>
 
 
-
-
- 
-      <main1> 
-        <div class="Seasons">
-          <img class="image" src="img/spring1.jpg" alt="Spring" height="260">
-          <div class="centered">
-            <a href="sida2.html" style="color:white;" target="_blank">Spring</a>
-          </div>
-        </div>
-        
-        <div class="Seasons">
-          <img class="image" src="img/summer1.jpg" alt="Summer" height="260">
-          <div class="centered">Summer</div>
-        </div>
-      <main1>
-
-      <main12>
-        <div class="Seasons">
-          <img class="image" src="img/autumn1.jpg" alt="Autumn" height="260">
-        <div class="centered">Autumn</div>
-      </div>
-      <div class="Seasons">
-          <img class="image" src="img/winter1.jpg" alt="Winter" height="260">
-        <div class="centered">Winter</div>
-      </div>
-      </main12>

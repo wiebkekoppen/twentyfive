@@ -1,7 +1,7 @@
 
 
 @media only screen and (min-width: 375px){
-    main1, main12{
+    main1, main12, se222, se221, #outline23{
         display: none;
     }
 }
@@ -10,7 +10,7 @@
 #outline{
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 5vh 20vh 20vh auto 15vh;
+    grid-template-rows: 5vh 20vh auto auto 15vh;
     grid-gap: 20px;
     grid-template-areas: 
 
@@ -227,7 +227,7 @@ section26{
     text-align:justify;
 }
 
-main3{
+main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -256,6 +256,7 @@ main3{
 }
 
 
+
 .image{
     box-shadow: 5px 5px 15px rgb(0, 0, 0);
     object-fit: cover;
@@ -282,11 +283,11 @@ main3{
     object-fit: cover;
     width: 150px;
     height: 150px;
-  }
+}
 
 
 @media only screen and (min-width: 1024px){
-    section21, section22, section23, section24, section25, section26, main3{
+    section21, section22, section23, section24, section25, section26, main{
         display: none;
     }
 
@@ -323,4 +324,17 @@ main3{
         flex-direction: row;
     }
 
+    #outline23{
+
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5vh 20vh 35vh 35vh 15vh;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "nv nv"
+        "hd hd"
+        "mn2 mn2"
+        "mn22 mn22"
+        "ft ft";
+    }
 }

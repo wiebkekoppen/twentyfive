@@ -40,6 +40,24 @@
     "ft ft";
 }
 
+#outline3{
+
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh 20vh 20vh auto auto 15vh;
+    grid-gap: 20px;
+    grid-template-areas: 
+
+    "nv nv"
+    "hd hd"
+    "se3 se3"
+    "mn3 mn3"
+    "se32 se32"
+    "ft ft";
+
+}
+
+
 
 .background{
     opacity: 0.5;
@@ -146,6 +164,54 @@ footer{
     text-align:left;
     width: 100%;
 }
+
+
+
+main3{
+    grid-area: mn3;
+
+}
+
+.containermain3 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."; 
+  }
+
+  .containersection3 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+  }
+
+section32{
+    grid-area:se32;
+}
+
+section3{
+    grid-area:se3;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    text-align:left;
+    font-size: 14px;
+    align-items:center;
+    padding: 7px;
+    width: 100%;
+}
+
+
+
+
+
+
 
 section{
     grid-area: se1;

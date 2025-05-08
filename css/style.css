@@ -54,7 +54,22 @@
     "mn3 mn3"
     "se32 se32"
     "ft ft";
+}
 
+#outline4{
+    display: grid;
+    grid-template-columns: 33.99% 33.99% 33.99%;
+    grid-template-rows: 10vh 35vh 25vh 35vh 35vh 30vh 15vh;
+    grid-gap: 20px;
+    grid-template-areas: 
+
+    "nv nv nv"
+    "hd hd hd"
+    "se4 se4 se4"
+    "mn4 se41 se41"
+    "mn41 se42 se42"
+    "se43 se43 se43"
+    "ft ft ft";
 }
 
 
@@ -184,7 +199,7 @@ main3{
       ". . . ."; 
   }
 
-  .containersection3 {
+.containersection3 {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
@@ -206,12 +221,6 @@ section3{
     padding: 7px;
     width: 100%;
 }
-
-
-
-
-
-
 
 section{
     grid-area: se1;
@@ -293,6 +302,70 @@ section26{
     text-align:justify;
 }
 
+
+section4{
+    grid-area: se4;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+
+
+section41{
+    grid-area: se41;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+section42{
+    grid-area: se42;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+section43{
+    grid-area: se43;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+main4{
+    grid-area: mn4;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+main41{    
+    grid-area: mn41;
+    display: flex;
+    justify-content:center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:justify;
+}
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -332,13 +405,21 @@ main{
     padding: 7px 7px 7px;
 }
 
-    .polaroid {
+.polaroid {
     background-color: #fff;
     padding: 15px 15px 190px;
     display: inline-block;
     box-shadow: 5px 7px 4px #888888;
     text-align: center;
-  }
+}
+
+.polaroid2 {
+    background-color: #fff;
+    padding: 15px 15px 133px;
+    display: inline-block;
+    box-shadow: 5px 7px 4px #888888;
+    text-align: center;
+}
 
   .figcaption {
     color: #000;
@@ -349,6 +430,13 @@ main{
     object-fit: cover;
     width: 150px;
     height: 150px;
+}
+
+.workerimage{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+
 }
 
 

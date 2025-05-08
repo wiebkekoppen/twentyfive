@@ -1,7 +1,7 @@
 
 
 @media only screen and (min-width: 375px){
-    main1, main12, se222, se221, main2, main22{
+    main1, main12, se222, se221, main2, main22, section34, section33, nav2, main42{
         display: none;
     }
 }
@@ -10,7 +10,7 @@
 #outline{
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 5vh 20vh auto auto 15vh;
+    grid-template-rows: 5vh 20vh auto auto 10vh;
     grid-gap: 20px;
     grid-template-areas: 
 
@@ -25,7 +25,7 @@
 
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 5vh 20vh 35vh 35vh 35vh 35vh 35vh 35vh 15vh;
+    grid-template-rows: 5vh 20vh 35vh 35vh 35vh 35vh 35vh 35vh 10vh;
     grid-gap: 20px;
     grid-template-areas: 
 
@@ -44,7 +44,7 @@
 
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10vh 20vh 20vh auto auto 15vh;
+    grid-template-rows: 10vh 20vh 20vh auto auto 10vh;
     grid-gap: 20px;
     grid-template-areas: 
 
@@ -59,7 +59,7 @@
 #outline4{
     display: grid;
     grid-template-columns: 33.99% 33.99% 33.99%;
-    grid-template-rows: 10vh 35vh 25vh 35vh 35vh 30vh 15vh;
+    grid-template-rows: 10vh 35vh 25vh 35vh 35vh 30vh 10vh;
     grid-gap: 20px;
     grid-template-areas: 
 
@@ -170,40 +170,35 @@ nav{
 
 footer{
     grid-area: ft;
-    background-color: transparent;
+    display: flex;
+    background-color: white;
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
     justify-content: center;
     align-items: center;
-    text-align:left;
-    width: 100%;
-}
-
-
-
-main3{
-    grid-area: mn3;
+    width: 500px;
+    margin:0 auto;
 
 }
+
 
 .containermain3 {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . . ."
-      ". . . ."
-      ". . . ."
-      ". . . ."; 
+    grid-template-columns: repeat(4,1fr); 
+    gap: 10px;
+    padding: 10px;
+    max-width: 100%;
   }
 
 .containersection3 {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
+    gap: 10px;
+    padding: 10px;
+    max-width: 100%;
+ 
   }
 
 section32{
@@ -212,14 +207,14 @@ section32{
 
 section3{
     grid-area:se3;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0 auto; 
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
-    text-align:left;
     font-size: 14px;
-    align-items:center;
-    padding: 7px;
-    width: 100%;
+    max-width: 500px;
 }
 
 section{
@@ -375,6 +370,12 @@ main{
     grid-gap: 20px;
 }
 
+main3{
+    grid-area: mn3;
+    gap: 10px;
+    margin: 0 auto; 
+}
+
 
 .centered{
     position: absolute;
@@ -399,10 +400,14 @@ main{
 .image{
     box-shadow: 5px 5px 15px rgb(0, 0, 0);
     object-fit: cover;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     background-color: #fff;
     padding: 7px 7px 7px;
+}
+
+.image2{
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
 .polaroid {
@@ -416,6 +421,13 @@ main{
 .polaroid2 {
     background-color: #fff;
     padding: 15px 15px 133px;
+    display: inline-block;
+    box-shadow: 5px 7px 4px #888888;
+    text-align: center;
+}
+.polaroid3 {
+    background-color: #fff;
+    padding: 30px 30px 150px;
     display: inline-block;
     box-shadow: 5px 7px 4px #888888;
     text-align: center;
@@ -436,60 +448,72 @@ main{
     object-fit: cover;
     width: 100px;
     height: 100px;
-
+}
+.workerimage3{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
 }
 
 
 @media only screen and (min-width: 1024px){
-    section21, section22, section23, section24, section25, section26, main{
+    section21, section22, section23, section24, section25, section26, main, section32, nav, .menu-button, main4, main41, section32, .containersection3{
         display: none;
     }
 
+    nav2{
+        grid-area: nv2;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+  
     #outline{
         display:grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10vh 20vh 20vh auto auto 15vh;
+        grid-template-rows: 20vh 10vh 20vh auto auto 10vh;
         grid-gap: 20px;
         grid-template-areas: 
-    
-        "nv nv"
         "hd hd"
+        "nv2 nv2"
         "se1 se1"
         "mn1 mn1"
         "mn12 mn12"
         "ft ft";
     }
+
     main1{
         display: flex;
         flex-direction: row;
         justify-content:  space-evenly ;
         grid-area: mn1;
         background-color: transparent;
-        grid-gap: 20px;
-    }
-
+        grid-gap: 20px;}
     main12{
         display: flex;
         justify-content:  space-evenly ;
         grid-area: mn12;
         background-color: transparent;
         grid-gap: 20px;
-        flex-direction: row;
-    }
+        flex-direction: row;}
 
     #outline2{
         display:grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 5vh 20vh 45vh 45vh 15vh;
+        grid-template-rows: 20vh 10vh 45vh 45vh 10vh;
         grid-gap: 20px;
         grid-template-areas: 
-        "nv nv"
         "hd hd"
+        "nv2 nv2"
         "mn2 mn2"
         "mn22 mn22"
         "ft ft";
     }
-
     main2{
         grid-area: mn2;
         background-color: transparent;
@@ -498,9 +522,7 @@ main{
         font-family: "Shadows Into Light", cursive;
         font-weight: 400;
         font-style: normal;
-        text-align:justify;
-    }
-
+        text-align:justify;}
     main22{
         grid-area: mn22;
         background-color: transparent;
@@ -509,6 +531,65 @@ main{
         font-family: "Shadows Into Light", cursive;
         font-weight: 400;
         font-style: normal;
-        text-align:justify;
+        text-align:justify;}
+
+
+    #outline3{
+        display:grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 20vh 10vh 30vh auto 10vh;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "hd hd hd"        
+        "nv2 nv2 nv2"
+        "se3 se3 se3"
+        "se33 mn3 se34"
+        "ft ft ft";
     }
+
+    section33{
+        grid-area:se33;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        gap: 10px;}
+    section34{
+        grid-area:se34;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        gap: 10px;}
+
+    #outline4{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+            grid-template-rows: 20vh 10vh 25vh 60vh 30vh 10vh;
+            grid-gap: 20px;
+            grid-template-areas: 
+        
+            "hd hd hd"
+            "nv2 nv2 nv2"
+            "se4 se4 se43"
+            "mn42 mn42 mn42"
+            "se41 se41 se42"
+            "ft ft ft";
+    }
+
+    section4{
+        grid-column-start: 1;
+        grid-column-end:2
+    }
+    section41{
+        grid-column-start: 1;
+        grid-column-end:2}
+    main42{
+        grid-area: mn42;
+        display: flex;
+        justify-content:center;
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align:justify;}
 }
